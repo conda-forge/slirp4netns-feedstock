@@ -1,4 +1,4 @@
-{% set version = "1.1.8" %}
+{% set version = "1.2.1" %}
 
 package:
   name: slirp4netns
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/rootless-containers/slirp4netns/archive/v{{ version }}.tar.gz
-  sha256: 82c8220dc86c5084459abcd0b961175ec84bc7a0c6093c71b30e55be894c85c0
+  sha256: 51aa240e1e29905ed35b449ca718539a01221aab3b6d291c4dc6777f0eb9d7d9
   patches:
     - 0001-Add-missing-defines-for-CentOS-6.patch
 
