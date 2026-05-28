@@ -11,7 +11,7 @@ source:
     - 0001-Add-missing-defines-for-CentOS-6.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not linux]
   ignore_run_exports:
     # slirp4netns uses defines from libcap but does not link to it.
@@ -20,6 +20,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - autoconf >=2.69
     - automake >=1.11.2
     - make
