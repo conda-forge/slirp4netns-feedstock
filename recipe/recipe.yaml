@@ -24,11 +24,10 @@ requirements:
     - make
     - pkg-config >=0.9.0
   host:
+    # glibconfig.h and the other glib headers are only in the glib output.
     - glib
-    # Header+pkgconfig files for libglib are in the glib package.
     - libglib
     - libslirp >=4.1.0
-    - libslirp
     - libcap
     - libseccomp
   ignore_run_exports:
